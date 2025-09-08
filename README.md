@@ -1,4 +1,5 @@
-## beginner-projects
-### The purpose of this repo is to host my first projects as a beginner in web dev.
-### Starting with HTML projects and incorporating CSS 
-### and JavaScript as learning progresses.
+# Beginner Exercises
+A collection of exercises I'm doing. I'm trying to begin a career as front end developer.
+
+It's a long journey, but I'll try my best.
+

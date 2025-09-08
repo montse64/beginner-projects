@@ -1,0 +1,69 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Survey Form</title>
+		<link href='styles.css' rel='stylesheet'>
+    </head>
+
+    <body>
+		<h1 id="title">Gym Satisfaction Survey</h1>
+		<p id="description">Thank you for helping us improve our service by filling out this form.</p>
+		<form id="survey-form">
+			<fieldset>
+				<legend>Contact information</legend>
+				<label id="name-label" for="name">Name</label>
+				<input required type="text" id="name" name="name" placeholder="John Doe" >
+				<label id="email-label" for="email">Email</label>
+				<input required type="email" id="email" name="name" placeholder="name@example.com">
+				<label id="number-label" for="number">Age(optional)</label>
+				<input type="number" id="number" name="name" min="16" max="100" placeholder="18">
+			</fieldset>
+			<fieldset>
+				<legend>How do you rate the technical level of our personal trainers?</legend>
+				<select id="dropdown">
+					<option>Very good</option>
+					<option>Good</option>
+					<option>Average</option>
+					<option>Disappointing</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>How would you rate the quality of the sports equipment?</legend>
+				<label for="one">1</label>
+				<input type="radio" id="one" name="quality" value="one">
+				<label for="two">2</label>
+				<input type="radio" id="two" name="quality"value="two">
+				<label for="three">3</label>
+				<input type="radio" id="three" name="quality"value="three">
+				<label for="four">4</label>
+				<input type="radio" id="four" name="quality"value="four">
+				<label for="one">5</label>
+				<input type="radio" id="five" name="quality" value="five">
+			</fieldset>
+			<fieldset>
+				<legend>What do you think we could improve? (Check all that apply)</legend>
+				<label for="weight">Free-weights Area</label>
+				<input type="checkbox" id="weight" name="improve" value="weight">
+				<label for="cardio">Cardio Zone</label>
+				<input type="checkbox" id="cardio" name="improve" value="cardio">
+				<label for="fitness">Fitness Area</label>
+				<input type="checkbox" id="fitness" name="improve" value="fitness">
+				<label for="locker">Locker rooms</label>
+				<input type="checkbox" id="locker" name="improve" value="locker">
+			</fieldset>
+			<fieldset>
+				<legend>What can we do to make you more comfortable?</legend>
+				<label for="confort"></label>
+				<textarea id="confort" rows="5" cols="50"></textarea>
+			</fieldset>
+			<button id="submit" type="submit">Submit</button>
+		</form>
+    </body>
+
+</html>
