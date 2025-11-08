@@ -5,4 +5,198 @@
 	box-sizing: border-box;
 }
 
+html {
+	background-image: url("gym-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-clip: border-box;
+	border: 10px solid white;
+	
+}
+
+body {
+	font-family: "FreeMono Bold", Courier, sans-serif;
+	margin: 20px auto;
+	width: 70vw;
+	height: auto;
+	padding: 20px 20px;
+	border: 2px solid ;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 10px;
+	background-color: #00827F;
+	color: #FFFFEE;
+	font-size: 1.25rem;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-size: 5rem;
+}
+
+h1 + p {
+	text-align: left;
+	font-size: 1.5rem;
+	font-style: italic;
+	padding-bottom: 30px;
+	color: #FFFFFF;
+	text-shadow: yellow 0 0 2px;
+}
+
+fieldset {
+	margin-bottom: 40px;
+	margin-top: 40px;
+	border: 2px solid yellow;
+}
+
+input,
+select,
+textarea {
+	background-color: #FFFDD0;
+	color: black;
+}
+
+input[type="checkbox"] {
+	background-color: #fff;
+	border: 1px solid black;
+	appearance: none;
+	width: 16px;
+	height: 16px;
+}
+
+.checkbox-text label{
+	margin-right: 60px;
+}
+
+input[type="checkbox"]:checked {
+	background-color: yellow;
+	border: 1px solid yellow;
+}
+
+legend {
+	padding-bottom: 20px;
+	padding-top: 5px;
+	font-size: 24px;
+}
+
+.user-data,
+.text-area,
+.option,
+.checkbox-text,
+.radio {
+	padding-bottom: 20px;
+}
+
+.radio input {
+	appearance: none;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 1px solid yellow;
+	width: 24px;
+	height: 24px;
+}
+
+.radio label {
+	font-size: 24px;
+	margin-right: 60px;
+}
+.radio input:checked {
+	background-color: yellow;
+}
+
+.option select {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+	width: 180px;
+}
+
+.user-data input {
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+	margin-right: 40px;
+}
+
+.option select, 
+.user-data input {
+	height:40px;
+	font-family: "Open Sans Condensed", sans-serif;
+	font-style: italic;
+	border-radius: 5px;
+	border: 1px solid yellow;
+}
+
+.text-area textarea {
+	margin-left: 5px;
+	border-radius: 5px;
+	border: 2px solid #00827F;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 20px;
+	word-spacing: 4px;
+	font-style: italic;
+}
+
+button {
+	margin: 20px 40%;
+	text-align: center;
+	width: 200px;
+	height: auto;
+	font-size: 28px;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid green;
+	background-color: yellow;
+	color: black;
+	font-weight: bold;
+}
+
+button:hover {
+	opacity: 0.4;
+}
+
+button:active {
+	background-color: black;
+	color: yellow;
+}
+
+.text-area textarea:invalid,
+.user-data input:invalid {
+	border:2px solid red;
+}
+
+.text-area textarea:valid,
+.user-data input:valid {
+	border:5px solid yellow;
+}
+
+.text-area textarea:focus,
+.user-data input:focus {
+	background-color: white;
+}
+
+footer {
+	text-align: right;
+	text-decoration: none;
+	color: yellow;
+	font-size: 1rem;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+
+footer a {
+	color: black;
+}
+	
+hr {
+	border: 1px solid yellow;
+}
+
+
+
+
+
 

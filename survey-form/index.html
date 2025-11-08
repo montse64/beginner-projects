@@ -3,67 +3,70 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<title>Survey Form</title>
 		<link href='styles.css' rel='stylesheet'>
     </head>
-
     <body>
 		<h1 id="title">Gym Satisfaction Survey</h1>
 		<p id="description">Thank you for helping us improve our service by filling out this form.</p>
 		<form id="survey-form">
-			<fieldset>
+			<fieldset class="user-data">
 				<legend>Contact information</legend>
-				<label id="name-label" for="name">Name</label>
+				<label id="name-label" for="name" minlength="3" maxlength="30">Name</label>
 				<input required type="text" id="name" name="name" placeholder="John Doe" >
-				<label id="email-label" for="email">Email</label>
+				<label id="email-label" for="email" minlength="3" maxlength="30">Email</label>
 				<input required type="email" id="email" name="name" placeholder="name@example.com">
-				<label id="number-label" for="number">Age(optional)</label>
+				<label id="number-label" for="number">Age (optional)</label>
 				<input type="number" id="number" name="name" min="16" max="100" placeholder="18">
 			</fieldset>
-			<fieldset>
+			<fieldset class="option">
 				<legend>How do you rate the technical level of our personal trainers?</legend>
 				<select id="dropdown">
-					<option>Very good</option>
-					<option>Good</option>
-					<option>Average</option>
-					<option>Disappointing</option>
+					<option value="" disabled>Please choose an option</option>
+					<option value="very-good" selected>Very good</option>
+					<option value="good">Good</option>
+					<option value="average">Average</option>
+					<option value="dissapointing">Disappointing</option>
 				</select>
 			</fieldset>
-			<fieldset>
+			<fieldset class="radio">
 				<legend>How would you rate the quality of the sports equipment?</legend>
-				<label for="one">1</label>
 				<input type="radio" id="one" name="quality" value="one">
+				<label for="one">1</label>
+				<input type="radio" id="two" name="quality" value="two">
 				<label for="two">2</label>
-				<input type="radio" id="two" name="quality"value="two">
+				<input type="radio" id="three" name="quality" value="three">
 				<label for="three">3</label>
-				<input type="radio" id="three" name="quality"value="three">
+				<input type="radio" id="four" name="quality" value="four">
 				<label for="four">4</label>
-				<input type="radio" id="four" name="quality"value="four">
-				<label for="one">5</label>
-				<input type="radio" id="five" name="quality" value="five">
+				<input type="radio" id="five" name="quality" value="five" checked>
+				<label for="five" >5</label>
 			</fieldset>
-			<fieldset>
+			<fieldset class="checkbox-text" >
 				<legend>What do you think we could improve? (Check all that apply)</legend>
-				<label for="weight">Free-weights Area</label>
 				<input type="checkbox" id="weight" name="improve" value="weight">
-				<label for="cardio">Cardio Zone</label>
+				<label for="weight">Free-weights Area</label>
 				<input type="checkbox" id="cardio" name="improve" value="cardio">
-				<label for="fitness">Fitness Area</label>
+				<label for="cardio">Cardio Zone</label>
 				<input type="checkbox" id="fitness" name="improve" value="fitness">
-				<label for="locker">Locker rooms</label>
+				<label for="fitness">Fitness Area</label>
 				<input type="checkbox" id="locker" name="improve" value="locker">
+				<label for="locker">Locker rooms</label>
 			</fieldset>
-			<fieldset>
+			<fieldset class="text-area">
 				<legend>What can we do to make you more comfortable?</legend>
-				<label for="confort"></label>
-				<textarea id="confort" rows="5" cols="50"></textarea>
+				<textarea id="confort" rows="8" cols="80" minlength="3" maxlength="300" placeholder="Write your preferences..." required></textarea>
 			</fieldset>
 			<button id="submit" type="submit">Submit</button>
 		</form>
+		<hr >
+		<footer>
+			Image by <a href="https://pixabay.com/users/hpgruesen-2204343/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1948912">Erich Westendarp</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1948912">Pixabay</a>
+		</footer>
+			
     </body>
 
 </html>
