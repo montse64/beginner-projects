@@ -1,0 +1,98 @@
+/* styles.css */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+#house {
+	position: relative;
+	width: 500px;
+	height: 400px;
+	background-color: #ff9980;
+	border: 5px solid #b35900;
+	margin: auto;
+	top: 150px;
+	z-index: 1;
+}
+#roof, #chimney, #window-1, #window-2, #door {
+	position: absolute;
+}
+#roof {
+	top: 0;
+	bottom: 120px;
+	width: 100%;
+	height: 35%;
+	background-color: #CC4133;
+	border: 0;
+}
+#chimney{
+	/* width, height, background-color, border */
+	top: -80px;
+	width: 15%;
+	height: 20%;
+	background-color: #8B8B6F;
+	border: 1px solid #5d5d4a;
+	right: 30px;
+	z-index: -1;
+}
+#window-1 {
+	top: 160px;
+	left: 20px;
+	width: 20%;
+	height: 20%;
+	background-color: #ffff99;
+	border: 4px solid #b35900;
+}
+#window-2 {
+	top: 160px;
+	right: 20px;
+	width: 20%;
+	height: 20%;
+	background-color: #ffff99;
+	border: 4px solid #b35900;
+}
+.vertical-split {
+	width: 50%;
+	height: 100%;
+	border-right: 4px solid #b35900;
+}
+#door {
+	bottom: 0;
+	width: 20%;
+	height: 40%;
+	background-color: #e8e8e8;
+	border: 4px solid #b35900;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.door-knob {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #b35900;
+	top: 70px;
+	right: 5px;
+}
+.blue-sky {
+	width: 100%;
+	height: 40%;
+	background-color: #66CCFF;
+	z-index: 0;
+	position: absolute;
+	top: 0;
+}
+.green-garden {
+	width: 100%;
+	height: 60%;
+	background-color: #00AC00;
+	z-index: 0;
+	position: absolute;
+	bottom: 0;
+}
+
+
+
