@@ -1,0 +1,100 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Technical Documentation Page</title>
+		<link href='styles.css' rel='stylesheet'>
+    </head>
+
+    <body>
+		<nav id="navbar">
+			<header>Shell Scripting</header>
+			<ul>
+				<li><a class="nav-link" href="#introduction">Introduction</a></li>
+				<li><a class="nav-link" href="#example-script">Example script</a></li>
+				<li><a class="nav-link" href="#shell-variables">Shell variables</a></li>
+				<li><a class="nav-link" href="#special-variables">Special variables</a></li>
+				<li><a class="nav-link" href="#reference">Reference</a></li>
+			</ul>
+		</nav>
+		<main id="main-doc">
+			<section class="main-section" id="introduction">
+				<header>Introduction</header>
+				<article>
+					<p>In the world of DevOps and system administration, automating repetitive tasks is key to saving time and reducing errors. That’s where shell scripting comes in. It allows you to write a series of commands in a file and run them all at once, just like a program.</p>
+					<p>A shell script is a file containing a series of commands for the shell to execute. The shell itself is a command-line interpreter (CLI), while a shell script is a saved list of instructions (usually with .sh extension) like myscript.sh.</p>
+					<p>Here are the main reasons shell scripts are widely used in IT and DevOps:</p>
+					<ul>
+						<li>Automate repetitive tasks as file cleanup, backups and server updates.</li>
+						<li>Reliable and consistent. Shell scripts run the exact same steps every time, without mistakes.</li>
+						<li>Native support on Unix/Linux systems, so no additional installations.</li>
+						<li>In DevOps, they are widely used to speed up deployments and manage infrastructure without doing everything manually.</li>
+						<li>They are interpreted, so there is no compile step. 
+					</ul>
+				</article>
+			</section>
+			<section class="main-section" id="example-script">
+				<header>Example script</header>
+				<article>
+					<p>Assume we create a test.sh script. Before you add anything else to your script, you need to alert the system that a shell script is being started. This is done using the shebang construct.</p>
+					<pre><code>#!/bin/sh</code></pre>
+					<p>To create a script containing commands, you put the shebang line first and then add the commands.</p>
+					<pre><code>#!/bin/sh</code></pre>
+					<pre><code>pwd</code></pre>
+					<pre><code>ls</code></pre>
+					<p>Save the above content and make the script executable.</p>
+					<pre><code>$chmod +x myscript.sh</code></pre>
+					<p>Now, let's run the script</p>
+					<pre><code>./myscript.sh</code></pre>
+				</article>
+			</section>
+			<section class="main-section" id="shell-variables">
+				<header>Shell variables</header>
+				<article>
+					<p>The name of a variable can contain only letters, numbers or the underscore character.</p>
+					</p>
+					<p>By convention, Unix shell variables will have their names in UPPERCASE.</p>
+					<pre><code>#!/bin/sh</code></pre>
+					<pre><code>NAME="John Doe"</code></pre>
+					<pre><code>echo $NAME</code></pre>
+					<pre><code># output</code></pre>
+					<pre><code>$ John Doe</code></pre>
+				</article>
+			</section>
+			<section class="main-section" id="special-variables">
+				<header>Special variables</header>
+				<article>
+					<p>Some of the special variables that you can use in your shell scripts:</p>
+					<ul>
+						<li>The filename of the current script: $0</li>
+						<li>The number of arguments supplied to a script: $#</li>
+						<li>The exit status of the last command executed: $?</li>
+						<li>The process number of the last background command: $!</li>
+					</ul>
+					<pre><code>#!/bin/sh</code></pre>
+					<pre><code>echo "File Name: $0"</code></pre>
+					<pre><code>echo "First Parameter : $1"</code></pre>
+					<pre><code>echo "First Parameter : $1"</code></pre>
+					<pre><code>echo "Total Number of Parameters : $#"</code></pre>
+				</article>
+			</section>
+			<section class="main-section" id="reference">
+				<header>Reference</header>
+				<article>
+					<p>Shell scripting documentation an much more</p>
+					<ul>
+						<li><a href="https://www.geeksforgeeks.org/" target="_blank">www.geeksforgeeks.org</a></li>
+						<li><a href="https://www.tutorialspoint.com/" target="_blank">www.tutorialspoint.com</a></li>
+					</ul>
+				</article>
+			</section>
+		</main>
+			
+    </body>
+
+</html>
