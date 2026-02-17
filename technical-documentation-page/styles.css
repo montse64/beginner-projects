@@ -6,59 +6,103 @@
 	margin: 0;
 	padding: 0;
 }
-body {
-	background-color: #fff;
-	display: flex;
-	font-family: Arial, sans-serif;
-}
-#navbar header{
-	font-size: 2rem;
-	margin-bottom: 20px;
-	font-weight: 700;
-}
-#navbar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 250px;
-	height: 100vh;
-	background: white;
-	border-right: 2px solid #ccc;
-	padding: 20px;
-	overflow-y: auto;
+html {
+        scroll-behavior: smooth;
 }
 
-#navbar .nav-link {
+body {
+	background-color: #fff;
+	font-family: Arial, sans-serif;
+}
+.container {
+	position: relative;
+	height: auto;
+	margin: 20px 10px;
+}
+@media(min-width: 641px) {
+	#navbar {
+		position: fixed;
+		top: 20px;
+		left: 10px;
+		width: 300px;
+		height: 100vh;
+		border-right: 1px solid #ccc;
+	}
+	#main-doc {
+		margin-left: 300px;
+		padding: 20px;
+		width: 900px;
+	}
+}
+#navbar header {
+	font-size: 2rem;
+	font-weight: 700;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+#navbar .nav-link{
+	border-bottom: 1px solid #ccc;
 	display: block;
-	text-decoration: none;
+	width: 100%;
+	font-size: 1.5rem;
 	padding: 10px 0;
-	border-top: 1px solid #d3d3d3;
-	font-size: 1.35rem;
-	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
 	color: #030303;
 }
 #main-doc {
-	margin-left: 250px;
-	margin-right: 50px;
-	padding: 20px;
-	width: calc(100% - 250px);
 	color: #636363;
 	line-height: 1.5;
-}
+	font-size: 1.05rem;
+ }
 .main-section header {
 	font-size: 2rem;
 	font-weight: 600;
-	margin: 30px 0;
 	color: #030303;
 }
 .main-section p {
-	margin-left: 10px;
+	margin: 30px 0 ;
 }
 .main-section ul {
-	margin-top: 20px;
-	margin-left: 60px;
+	margin: 20px 0 20px 60px;
+	padding:30px 0;
 }
-.main-section code {
+.main-section pre {
 	background-color: #f3f3f3;
+	display: block;
+	padding: 10px;
+	border-radius: 2px;
+	font-weight: 500;
+	color: #434343;
+	font-size: 1rem;
+	white-space: pre-wrap;
 }
+.main-section a {
+	font-size: 0.7rem;
+}
+.main-section a:hover {
+	color: #cc3456;
+}
+#reference.main-section p {
+	margin-bottom: 0;
+}
+.main-section#reference ul {
+	margin-top: 0;
+	padding-top: 0;
+	list-style-type: none;
+}
+#reference header,
+#special-variables header,
+#shell-variables header {
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
 
